@@ -8,7 +8,7 @@ FasterRCNN如何使用：
 
 放入FasterRCNN\data文件夹中
 
-3.训练好的FasterRCNN网络权重：
+3.训练好的FasterRCNN网络权重：链接:https://pan.baidu.com/s/19MIZmKAq0BoWmj8UhljmNg  密码:qmi4
 
 放入FasterRCNN\models\vgg16\pascal_voc中
 
