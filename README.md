@@ -14,8 +14,8 @@ FasterRCNN如何使用：
 
 训练：
 
-python train.py
+python trainval_net.py
 
 gpu:
 
-python train.py --cuda
+python trainval_net.py --cuda
