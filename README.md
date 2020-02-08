@@ -11,3 +11,11 @@ FasterRCNN如何使用：
 3.训练好的FasterRCNN网络权重：
 
 放入FasterRCNN\models\vgg16\pascal_voc中
+
+训练：
+
+python train.py
+
+gpu:
+
+python train.py --cuda
