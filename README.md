@@ -1,6 +1,6 @@
 FasterRCNN如何使用：
 
-1.VOC数据集：
+1.VOC数据集：链接:https://pan.baidu.com/s/12Qgndt1TWUYBeIcL0Th20g  密码:dzi8
 
 放入FasterRCNN\data文件夹中
 
