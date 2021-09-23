@@ -61,7 +61,7 @@ $ python train.py --data tools.yaml --cfg yolov3.yaml --weights weights/yolov3.w
 ```
 其中 --cfg后面参数就是指定yolov3的各个版本作为预训练模型。<br/>
 另外 --cfg后面的xx.yam文件放在models目录下。<br/>
-训练输出在runs/train/目录下的各个exp目录下，exp17是这边训练毕竟好的版本。例如这里exp17/weights/best.pt就是目前本项目训练好的权重。用户可以自己训练。<br/>
+训练输出在runs/train/目录下的各个exp目录下，例如“exp17”是作者训练比较好的版本。权重是exp17/weights/best.pt。用户自己训练会生成新的exp文件。<br/>
 预训练模型权重。用户可以下载[链接](https://pan.baidu.com/s/1_dc1e1T0ixiEbWqW9Q3sEQ) 提取码:1234
 ### 训练耗时
 由于训练时比较耗时的，本数据集如果训练10轮，耗时需要近1天左右。希望用户耐心等待。（建议训练50-100轮）
