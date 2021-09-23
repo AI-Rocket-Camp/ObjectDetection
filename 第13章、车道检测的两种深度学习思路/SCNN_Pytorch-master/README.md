@@ -39,7 +39,7 @@ CULane_path
 
 
 ### Tusimple
-图森数据集 [Tusiple](https://pan.baidu.com/s/1VV-S8EJ3Z86WVQVS3qEkNA ) 提取码:1234。下载并解压,路径即 `Tusimple_path`. 然后修改config.py中的`Tusimple_path`。
+图森数据集 [Tusiple](https://pan.baidu.com/s/1VV-S8EJ3Z86WVQVS3qEkNA) 提取码:1234。下载并解压,路径即 `Tusimple_path`. 然后修改config.py中的`Tusimple_path`。
 ```
 Tusimple_path
 ├── clips
@@ -56,7 +56,7 @@ Tusimple_path
 ## 五、预训练模型下载
 
 
-Culane数据集上的基于vgg模型使用[本书提供的模型](链接：https://pan.baidu.com/s/1sBAxvm6I8o-cmhcneCmrWA) 
+Culane数据集上的基于vgg模型使用[本书提供的模型](https://pan.baidu.com/s/1sBAxvm6I8o-cmhcneCmrWA) 
 提取码：j6te
 下载后模型存放位置 `experiments/vgg_SCNN_DULR_w9/vgg_SCNN_DULR_w9.pth`。目前已经是最新模型。
 
@@ -73,7 +73,7 @@ Culane数据集上的基于vgg模型使用[本书提供的模型](链接：https
 | Night     | 65.32               |
 
 
-* 在图森数据集上训练的结果放在这[这](https://pan.baidu.com/s/1idK9IqfuagjaOnPq98aThA) 提取码t01m 下载后放入目录`experiments/exp0`.
+* 在图森数据集上训练的结果[本书提供的模型](https://pan.baidu.com/s/1idK9IqfuagjaOnPq98aThA) 提取码t01m 下载后放入目录`experiments/exp0`.
 下面是图森上SCNN的表现,这个训练很久。
   
 | Accuracy | FP   | FN   |
