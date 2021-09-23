@@ -43,7 +43,7 @@ $ python train.py --img 640 --batch 16 --epochs 5 --data tools.yaml --weights we
 --batch是批次大小<br/>
 --epochs是训练步数<br/>
 --data后面是自定义数据的yaml文件。yaml文件放在本项目下“data/labels”目录中，用户可以根据自己数据集情况，自定义分类数量，类别名称。<br/>
---weights 后面参数是模型与训练权重路径和文件。（可以不用这个权重自己训练）<br/>
+--weights 后面参数是模型预训练权重路径。（可以不用这个权重自己训练）<br/>
 --data 参数指定训练使用数据集配置，tools.yaml是我们自定义的数据配置<br/>
 另外，在这个命令前，需要启动tensorboard，这样方便查看训练过程<br/>
 ```bash
