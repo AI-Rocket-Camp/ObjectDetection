@@ -31,7 +31,7 @@ $ pip install TensorBoard==2.2.1
 本项目使用的数据集存放在[百度云盘](https://pan.baidu.com/s/1Ijd75uACrjZMusPZJq-jlA) 
 提取码：ecol <br/>
 下载完本项目数据集后，解压，把解压后的data文件内的数据复制到本项目下"data"目录即可（项目文件结构中的data）
-
+用户也可以根据书本上标注方法，在重新标注数据及放到data目录
 
 ## 五、使用自定义数据训练
 ### 训练
@@ -50,8 +50,8 @@ $ python train.py --data tools.yaml --cfg yolov3.yaml --weights weights/yolov3.w
 另外，在这个命令前，需要启动tensorboard，这样方便查看训练过程<br/>
 --cfg后面参数就是指定yolov3的各个版本作为预训练模型。<br/>
 另外 --cfg后面的xx.yam文件放在models目录下。<br/>
-训练输出在runs/train/目录下的各个exp目录下，例如“exp17”是作者训练比较好的版本。权重是exp17/weights/best.pt。用户自己训练会生成新的exp文件。<br/>
-预训练模型权重。用户可以下载[链接](https://pan.baidu.com/s/1_dc1e1T0ixiEbWqW9Q3sEQ) 提取码:1234
+训练输出在runs/train/目录下的各个exp目录下，例如“exp17”是作者训练比较好的版本。权重是exp17/weights/best.pt，best.pt放在下面连接中。用户自己训练会生成新的exp文件。<br/>
+预训练模型权重,和训练好的权重best.pt。用户可以下载[链接](https://pan.baidu.com/s/1_dc1e1T0ixiEbWqW9Q3sEQ) 提取码:1234
 
 ### 训练过程查看
 ```bash
