@@ -1,0 +1,6 @@
+numpy
+opencv-python
+torch>=0.4.1
+torchvision>=0.8.1
+tensorboard>=2.2.1
+tensorflow>=2.6.1
