@@ -1,6 +1,6 @@
 ## 一、声明
 SCNN是一种基于语义分割任务的车道检测算法, 论文出处['Spatial As Deep: Spatial CNN for Traffic Scene Understanding'](https://arxiv.org/abs/1712.06080). [官方提供](https://github.com/XingangPan/SCNN) 是lua实现的。<br/>
-本项目基于官方开源代码，做了一些精简和改动。
+本项目基于官方开源代码，使用pytorch开发，做了一些精简和改动。
 
 ## 二、项目依赖安装
 要运行本项目，第一步在本项目目录下输入命令，否则会报错：
