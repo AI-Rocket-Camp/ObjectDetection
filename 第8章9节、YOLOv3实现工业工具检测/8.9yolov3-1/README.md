@@ -35,7 +35,7 @@ $ pip install TensorBoard==2.2.1
 
 ## 五、使用自定义数据训练
 ### 训练
-使用如下命令开始训练,注意--weightsh后面参数是训练保存的参数。
+
 ```bash
 $ python train.py --img 640 --batch 16 --epochs 5 --data tools.yaml --weights weights/yolov3.weights
 ```
@@ -43,8 +43,8 @@ $ python train.py --img 640 --batch 16 --epochs 5 --data tools.yaml --weights we
 --batch是批次大小<br/>
 --epochs是训练步数<br/>
 --data后面是自定义数据的yaml文件。yaml文件放在本项目下“data/labels”目录中，用户可以根据自己数据集情况，自定义分类数量，类别名称。<br/>
---weights 后面参数是模型训练保存的权重路径和文件名。<br/>
---data 指定训练使用数据集<br/>
+--weights 后面参数是模型与训练权重路径和文件。（可以不用这个权重自己训练）<br/>
+--data 参数指定训练使用数据集配置，tools.yaml是我们自定义的数据配置<br/>
 另外，在这个命令前，需要启动tensorboard，这样方便查看训练过程<br/>
 ```bash
 $ tensorboard --logdir runs/train
@@ -62,7 +62,7 @@ $ python train.py --data tools.yaml --cfg yolov3.yaml --weights weights/yolov3.w
 其中 --cfg后面参数就是指定yolov3的各个版本作为预训练模型。<br/>
 另外 --cfg后面的xx.yam文件放在models目录下。<br/>
 训练输出在runs/train/目录下的各个exp目录下，exp17是这边训练毕竟好的版本。例如这里exp17/weights/best.pt就是目前本项目训练好的权重。用户可以自己训练。<br/>
---weights后面的权重是与训练模型权重。用户可以下载[链接](https://pan.baidu.com/s/1_dc1e1T0ixiEbWqW9Q3sEQ) 提取码:1234
+预训练模型权重。用户可以下载[链接](https://pan.baidu.com/s/1_dc1e1T0ixiEbWqW9Q3sEQ) 提取码:1234
 ### 训练耗时
 由于训练时比较耗时的，本数据集如果训练10轮，耗时需要近1天左右。希望用户耐心等待。（建议训练50-100轮）
 ## 六、检测阶段
