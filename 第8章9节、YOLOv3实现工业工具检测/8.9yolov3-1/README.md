@@ -37,7 +37,9 @@ $ pip install TensorBoard==2.2.1
 ### 训练
 
 ```bash
-$ python train.py --img 640 --batch 16 --epochs 5 --data tools.yaml --weights weights/yolov3.weights
+$ python train.py --data tools.yaml --cfg yolov3.yaml --weights weights/yolov3.weights --batch-size 24
+                                         yolov3-spp.yaml                       24
+                                         yolov3-tiny.yaml                      64
 ```
 其中，<br/>
 --batch是批次大小<br/>
@@ -46,23 +48,18 @@ $ python train.py --img 640 --batch 16 --epochs 5 --data tools.yaml --weights we
 --weights 后面参数是模型预训练权重路径。（可以不用这个权重自己训练）<br/>
 --data 参数指定训练使用数据集配置，tools.yaml是我们自定义的数据配置<br/>
 另外，在这个命令前，需要启动tensorboard，这样方便查看训练过程<br/>
+--cfg后面参数就是指定yolov3的各个版本作为预训练模型。<br/>
+另外 --cfg后面的xx.yam文件放在models目录下。<br/>
+训练输出在runs/train/目录下的各个exp目录下，例如“exp17”是作者训练比较好的版本。权重是exp17/weights/best.pt。用户自己训练会生成新的exp文件。<br/>
+预训练模型权重。用户可以下载[链接](https://pan.baidu.com/s/1_dc1e1T0ixiEbWqW9Q3sEQ) 提取码:1234
+
+### 训练过程查看
 ```bash
 $ tensorboard --logdir runs/train
 ```
 网页查看
 "http://localhost:6006/ "即可看到训练过程。
-### 训练指定yolov3的版本
 
-当然，也可以用不同版本的yolov3来学习训练，命令如下，这里通过.yaml文件即可完成切换：
-```bash
-$ python train.py --data tools.yaml --cfg yolov3.yaml --weights weights/yolov3.weights --batch-size 24
-                                         yolov3-spp.yaml                       24
-                                         yolov3-tiny.yaml                      64
-```
-其中 --cfg后面参数就是指定yolov3的各个版本作为预训练模型。<br/>
-另外 --cfg后面的xx.yam文件放在models目录下。<br/>
-训练输出在runs/train/目录下的各个exp目录下，例如“exp17”是作者训练比较好的版本。权重是exp17/weights/best.pt。用户自己训练会生成新的exp文件。<br/>
-预训练模型权重。用户可以下载[链接](https://pan.baidu.com/s/1_dc1e1T0ixiEbWqW9Q3sEQ) 提取码:1234
 ### 训练耗时
 由于训练时比较耗时的，本数据集如果训练10轮，耗时需要近1天左右。希望用户耐心等待。（建议训练50-100轮）
 ## 六、检测阶段
